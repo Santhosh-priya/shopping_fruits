@@ -1,0 +1,57 @@
+// media queries
+=lg
+    @media only screen and (max-width: '1300px')
+        @content
+=xl
+    @media only screen and (max-width: '1200px')
+        @content
+=md
+    @media only screen and (max-width: '900px')
+        @content
+=m
+    @media only screen and (max-width: '600px')
+        @content
+=s
+    @media only screen and (max-width: '425px')
+        @content
+=xs
+     @media only screen and (max-width: '375px')
+        @content
+
+
+
+    
+// @font-face
+//     font-family: 'OpenSans-Regular'
+//     font-style: normal
+//     font-weight: normal
+//     src: local('OpenSans-Regular'), url('../fonts/OpenSans-Regular.ttf') format('truetype')
+
+
+
+// =commonFont
+//     font-family: 'OpenSans-Regular'
+
+
+
+// media query width
+=r($width)
+    @media only screen and (max-width: $width+ 'px')
+        @content
+
+=rmin($width)
+    @media only screen and (min-width: $width+ 'px')
+        @content
+
+// theme
+=dark
+    @at-root :global(.dark-mode) &
+        @content
+
+=dark-body
+    @at-root .dark-mode
+        @content
+
+=dark-common
+    @at-root .dark-mode &
+        @content
